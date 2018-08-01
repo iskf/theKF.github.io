@@ -6,19 +6,29 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="thekf.github.io">
-  <title>开发工具 | KF | 思考者</title>
+  <title>iOS安全 (Security) | KF | 思考者</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="生活一半记忆, 一半继续">
-<meta property="og:type" content="website">
-<meta property="og:title" content="开发工具">
-<meta property="og:url" content="thekf.github.io/tools/index.html">
+  <meta name="description" content="IOSSecurity iOS安全，App加固保护原理我们直接进图主题，就不说什么背景。 我们可以从以下几个方面来保护我们的APP:  字符串混淆 对应用程序中使用到的字符串进行加密，保证源码被逆向后不能看出字符串的直观含义。">
+<meta name="keywords" content="iOS安全,加密,加固原理,反编译">
+<meta property="og:type" content="article">
+<meta property="og:title" content="iOS安全 (Security)">
+<meta property="og:url" content="thekf.github.io/2017/03/15/iOS安全(Security)/index.html">
 <meta property="og:site_name" content="KF | 思考者">
-<meta property="og:description" content="生活一半记忆, 一半继续">
+<meta property="og:description" content="IOSSecurity iOS安全，App加固保护原理我们直接进图主题，就不说什么背景。 我们可以从以下几个方面来保护我们的APP:  字符串混淆 对应用程序中使用到的字符串进行加密，保证源码被逆向后不能看出字符串的直观含义。">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-08-01T04:32:43.078Z">
+<meta property="og:image" content="https://github.com/theKF/IOSSecurity/blob/master/myfilexxx.png?raw=true">
+<meta property="og:image" content="https://github.com/theKF/IOSSecurity/blob/master/staicvoid.png?raw=true">
+<meta property="og:image" content="https://github.com/theKF/IOSSecurity/blob/master/tagscope.png?raw=true">
+<meta property="og:image" content="https://github.com/theKF/IOSSecurity/blob/master/entrypoint.png?raw=true">
+<meta property="og:image" content="https://github.com/theKF/IOSSecurity/blob/master/xxxxxxxxx.png?raw=true">
+<meta property="og:image" content="https://github.com/theKF/IOSSecurity/blob/master/initmain.png?raw=true">
+<meta property="og:image" content="https://github.com/theKF/IOSSecurity/blob/master/entrypoint.png?raw=true">
+<meta property="og:image" content="https://github.com/theKF/IOSSecurity/blob/master/xxxxxxxxxyy.png?raw=true">
+<meta property="og:updated_time" content="2018-08-01T15:02:52.467Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="开发工具">
-<meta name="twitter:description" content="生活一半记忆, 一半继续">
+<meta name="twitter:title" content="iOS安全 (Security)">
+<meta name="twitter:description" content="IOSSecurity iOS安全，App加固保护原理我们直接进图主题，就不说什么背景。 我们可以从以下几个方面来保护我们的APP:  字符串混淆 对应用程序中使用到的字符串进行加密，保证源码被逆向后不能看出字符串的直观含义。">
+<meta name="twitter:image" content="https://github.com/theKF/IOSSecurity/blob/master/myfilexxx.png?raw=true">
   
     <link rel="alternative" href="/atom.xml" title="KF | 思考者" type="application/atom+xml">
   
@@ -156,27 +166,106 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="page-" class="article article-type-page " itemscope itemprop="blogPost">
+            <article id="post-iOS安全(Security)" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      开发工具
+      iOS安全 (Security)
     </h1>
   
 
         
-        <a href="/tools/index.html" class="archive-article-date">
-  	<time datetime="2016-03-01T04:28:53.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-03-01</time>
+        <a href="/2017/03/15/iOS安全(Security)/" class="archive-article-date">
+  	<time datetime="2017-03-15T14:32:24.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-03-15</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        
+        <h2 id="IOSSecurity"><a href="#IOSSecurity" class="headerlink" title="IOSSecurity"></a>IOSSecurity</h2><p> iOS安全，App加固保护原理<br>我们直接进图主题，就不说什么背景。</p>
+<p>我们可以从以下几个方面来保护我们的APP:</p>
+<blockquote>
+<h4 id="字符串混淆"><a href="#字符串混淆" class="headerlink" title="字符串混淆"></a>字符串混淆</h4><blockquote>
+<p><code>对应用程序中使用到的字符串进行加密，保证源码被逆向后不能看出字符串的直观含义。</code></p>
+</blockquote>
+</blockquote>
+<a id="more"></a>
+<blockquote>
+<h4 id="类名、方法名混肴"><a href="#类名、方法名混肴" class="headerlink" title="类名、方法名混肴"></a>类名、方法名混肴</h4><blockquote>
+<p><code>对应用程序的方法名和方法体进行混淆，保证源码被逆向后很难明白它的真正功能。</code></p>
+</blockquote>
+</blockquote>
+<blockquote>
+<h4 id="程序结构混肴"><a href="#程序结构混肴" class="headerlink" title="程序结构混肴"></a>程序结构混肴</h4><blockquote>
+<p><code>对应用程序逻辑结构进行打乱混排，保证源码可读性降到最低。</code></p>
+</blockquote>
+</blockquote>
+<blockquote>
+<h4 id="反调试、反注入等一些主动保护策略"><a href="#反调试、反注入等一些主动保护策略" class="headerlink" title="反调试、反注入等一些主动保护策略"></a>反调试、反注入等一些主动保护策略</h4><blockquote>
+<p><code>这是一些主动保护策略，增大破解者调试、分析APP的门槛。</code></p>
+</blockquote>
+</blockquote>
+<h4 id="字符串加密"><a href="#字符串加密" class="headerlink" title="字符串加密"></a>字符串加密</h4><ul>
+<li><p><a href="https://github.com/theKF/StringScurityDemo" target="_blank" rel="noopener">字符串加密Demo下载</a></p>
+</li>
+<li><p>字符串会暴露APP的很多关键信息，攻击者可以根据界面显示的字符串，快速找到相关逻辑的处理函数，从而进行分析破解。加密字符串可以增加攻击者阅读代码的难度以及根据字符串静态搜索的难度。<br><br></p>
+</li>
+</ul>
+<p>比如一个APP中有如下的一些字符串定义在代码文件中：</p>
+<p><img src="https://github.com/theKF/IOSSecurity/blob/master/myfilexxx.png?raw=true" alt="Scurity"></p>
+<p>经过加密后，代码文件变成如下的形式：</p>
+<p><img src="https://github.com/theKF/IOSSecurity/blob/master/staicvoid.png?raw=true" alt="Scurity"></p>
+<p>里面已经没有明文的字符串了，全是用byte的形式保存的，打包生成APP后，他们也就无法直观的看出实际内容了,这对破解者会造成巨大的难度：</p>
+<p><img src="https://github.com/theKF/IOSSecurity/blob/master/tagscope.png?raw=true" alt=""></p>
+<h4 id="符号混淆"><a href="#符号混淆" class="headerlink" title="符号混淆"></a>符号混淆</h4><ul>
+<li><a href="https://github.com/theKF/SymbolConfusionDemo" target="_blank" rel="noopener">方法名，变量名混淆Demo</a></li>
+<li>符号混淆的中心思想是将类名、方法名、变量名替换为无意义符号，提高应用安全性；防止敏感符号被class-dump工具提取，防止IDA Pro等工具反编译后分析业务代码。</li>
+</ul>
+<p>比如一款混淆后的APP,用IDA等工具打开，如下图所示:<br><img src="https://github.com/theKF/IOSSecurity/blob/master/entrypoint.png?raw=true" alt=""> </p>
+<p>“Labels”栏里，显示的这些符号，不管是类名还是方法名，谁也看不出来到底什么意思，这个函数到底是什么功能，就有点丈二和尚摸不着头脑的感觉，这就大大增加了破解者分析APP的难度。</p>
+<h4 id="代码逻辑混淆"><a href="#代码逻辑混淆" class="headerlink" title="代码逻辑混淆"></a>代码逻辑混淆</h4><ul>
+<li><p><a href="https://github.com/obfuscator-llvm/obfuscator" target="_blank" rel="noopener">逻辑混肴demo</a></p>
+</li>
+<li><p>代码逻辑混淆有以下几个方面的含义：</p>
+</li>
+</ul>
+<blockquote>
+<p>对方法体进行混淆，保证源码被逆向后该部分的代码有很大的迷惑性，因为有一些垃圾代码的存在；</p>
+</blockquote>
+<blockquote>
+<p>对应用程序逻辑结构进行打乱混排，保证源码可读性降到最低，这很容易把破解者带到沟里去；</p>
+</blockquote>
+<blockquote>
+<p>它拥有和原始的代码一样的功能，这是最最关键的。</p>
+</blockquote>
+<p>混淆前后的对比如下（左边是原始结构，右边是混淆后的结构）:</p>
+<p><img src="https://github.com/theKF/IOSSecurity/blob/master/xxxxxxxxx.png?raw=true" alt=""></p>
+<p>下面以iOS APP中的main函数为例:<br><img src="https://github.com/theKF/IOSSecurity/blob/master/initmain.png?raw=true" alt=""></p>
+<p>它就只有一行有效代码，包含两个关键函数，已经算最简单的函数体了，混淆前的汇编代码如下：</p>
+<p><img src="https://github.com/theKF/IOSSecurity/blob/master/entrypoint.png?raw=true" alt=""></p>
+<p>这里主要包含两个API的符号: NSStringFromClass、UIApplicationMain。其余就是一些消息发送以及内存管理的相关符号，但如果进行一定的代码逻辑混淆后，这个结构就会变得大不一样了。</p>
+<p><img src="https://github.com/theKF/IOSSecurity/blob/master/xxxxxxxxxyy.png?raw=true" alt=""></p>
+<p>NSStringFromClass、UIApplicationMain这两个函数，逻辑结构已经变得非常复杂了，如果一个函数中，包含更多的代码的话，那这个结构将更加复杂，对破解者来说将是一个很耗时间、精力的过程，一般早早就会放弃分析了。</p>
+<h3 id="URL编码加密"><a href="#URL编码加密" class="headerlink" title="URL编码加密"></a>URL编码加密</h3><ul>
+<li>对程序中出现的URL进行编码加密，防止URL被静态分析。</li>
+</ul>
+<h3 id="网络传输数据加密"><a href="#网络传输数据加密" class="headerlink" title="网络传输数据加密"></a>网络传输数据加密</h3><ul>
+<li>对客户端传输数据提供加密方案，防止通过网络接口的拦截获取数据。</li>
+</ul>
+<h3 id="主动保护策略"><a href="#主动保护策略" class="headerlink" title="主动保护策略"></a>主动保护策略</h3><ul>
+<li>除了上面的一些被动保护方法，我们还可以加入一些主动的防护机制，比如反调试等。</li>
+</ul>
+<blockquote>
+<p>iOS平台下的Anti-Debug方法一般有以下一些：</p>
+<blockquote>
+<p>检查进程的状态是否为 P_TRACED。<br>调用ptrace请求来检查进程是否被调试。由于可能被攻击者绕过该方法的调用，在应用的多处增加ptrace函数会提高应用的安全性。<br>通过sysctl查看信息进程里的标记，判断自己是否正在被调试。sysctl是用以查询内核状态的接口，并允许具备相应权限的进程设置内核状态。</p>
+</blockquote>
+</blockquote>
+
       
 
       
@@ -215,6 +304,29 @@
     <div class="article-info article-info-index">
       
       
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">iOS安全</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">加密</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">加固原理</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">反编译</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
       
 
       
@@ -265,7 +377,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http:thekf.github.io/tools/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http:thekf.github.io/2017/03/15/iOS安全(Security)/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -277,6 +389,25 @@
 </article>
 
   
+<nav id="article-nav">
+  
+    <a href="/2017/03/17/iOS日常(iBeacon)/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          iOS日常 (iBeacon之概述)
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2016/08/25/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Hello World</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
 
 <aside class="wrap-side-operation">
     <div class="mod-side-operation">
@@ -327,7 +458,7 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
+		isPost: true,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,

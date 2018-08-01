@@ -6,19 +6,23 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="thekf.github.io">
-  <title>开发工具 | KF | 思考者</title>
+  <title>iOS日常 (iBeacon之概述) | KF | 思考者</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="生活一半记忆, 一半继续">
-<meta property="og:type" content="website">
-<meta property="og:title" content="开发工具">
-<meta property="og:url" content="thekf.github.io/tools/index.html">
+  <meta name="description" content="什么是 iBeaconiBeacon 是苹果公司2013年9月发布的移动设备用OS（iOS7）上配备的新功能。其工作方式是，配备有 低功耗蓝牙（BLE）通信功能的设备使用BLE技术向周围发送自己特有的ID，接收到该ID的应用软件会根据该ID采取一些行动。比如，在店铺里设置iBeacon通信模块的话，便可让iPhone和iPad上运行一资讯告知服务器，或者由服务器向顾客发送折扣券及进店积分。此外，还">
+<meta name="keywords" content="iBeacon">
+<meta property="og:type" content="article">
+<meta property="og:title" content="iOS日常 (iBeacon之概述)">
+<meta property="og:url" content="thekf.github.io/2017/03/17/iOS日常(iBeacon)/index.html">
 <meta property="og:site_name" content="KF | 思考者">
-<meta property="og:description" content="生活一半记忆, 一半继续">
+<meta property="og:description" content="什么是 iBeaconiBeacon 是苹果公司2013年9月发布的移动设备用OS（iOS7）上配备的新功能。其工作方式是，配备有 低功耗蓝牙（BLE）通信功能的设备使用BLE技术向周围发送自己特有的ID，接收到该ID的应用软件会根据该ID采取一些行动。比如，在店铺里设置iBeacon通信模块的话，便可让iPhone和iPad上运行一资讯告知服务器，或者由服务器向顾客发送折扣券及进店积分。此外，还">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-08-01T04:32:43.078Z">
+<meta property="og:image" content="http://github.com/thekf/assets/ResourceImage/2017-06-02/e18de037123d1f04be1b05f0c8dbcb54.jpg">
+<meta property="og:image" content="http://github.com/assets/ResourceImage/2017-06-02/5a38882749a04af94f6622ff6998c5ac.jpg">
+<meta property="og:updated_time" content="2018-08-01T15:03:14.325Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="开发工具">
-<meta name="twitter:description" content="生活一半记忆, 一半继续">
+<meta name="twitter:title" content="iOS日常 (iBeacon之概述)">
+<meta name="twitter:description" content="什么是 iBeaconiBeacon 是苹果公司2013年9月发布的移动设备用OS（iOS7）上配备的新功能。其工作方式是，配备有 低功耗蓝牙（BLE）通信功能的设备使用BLE技术向周围发送自己特有的ID，接收到该ID的应用软件会根据该ID采取一些行动。比如，在店铺里设置iBeacon通信模块的话，便可让iPhone和iPad上运行一资讯告知服务器，或者由服务器向顾客发送折扣券及进店积分。此外，还">
+<meta name="twitter:image" content="http://github.com/thekf/assets/ResourceImage/2017-06-02/e18de037123d1f04be1b05f0c8dbcb54.jpg">
   
     <link rel="alternative" href="/atom.xml" title="KF | 思考者" type="application/atom+xml">
   
@@ -156,27 +160,61 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="page-" class="article article-type-page " itemscope itemprop="blogPost">
+            <article id="post-iOS日常(iBeacon)" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      开发工具
+      iOS日常 (iBeacon之概述)
     </h1>
   
 
         
-        <a href="/tools/index.html" class="archive-article-date">
-  	<time datetime="2016-03-01T04:28:53.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-03-01</time>
+        <a href="/2017/03/17/iOS日常(iBeacon)/" class="archive-article-date">
+  	<time datetime="2017-03-17T14:12:24.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-03-17</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        
+        <h2 id="什么是-iBeacon"><a href="#什么是-iBeacon" class="headerlink" title="什么是 iBeacon"></a>什么是 iBeacon</h2><p><code>iBeacon</code> 是苹果公司2013年9月发布的移动设备用OS（iOS7）上配备的新功能。其工作方式是，配备有 低功耗蓝牙（BLE）通信功能的设备使用BLE技术向周围发送自己特有的ID，接收到该ID的应用软件会根据该ID采取一些行动。比如，在店铺里设置iBeacon通信模块的话，便可让iPhone和iPad上运行一资讯告知服务器，或者由服务器向顾客发送折扣券及进店积分。此外，还可以在家电发生故障或停止工作时使用iBeacon向应用软件发送资讯。</p>
+<a id="more"></a>
+<p>目前，国内 ibeacon 服务商有 DropBeacon、SENSORO 和四月兄弟等。DropBeacon 的应用主要针对商场，比如西单大悦城和王府 apm,SENEORO 在 2B 领域为高端零售商与银行服务，四月兄弟的应用合作则面向博物馆和景区。</p>
+<h2 id="iBeacon-能做什么"><a href="#iBeacon-能做什么" class="headerlink" title="iBeacon 能做什么"></a>iBeacon 能做什么</h2><ul>
+<li>我们能够感受到的导航与推送</li>
+</ul>
+<p>为了体验一次 iBeacon 的商场应用，我特地挑了一个工作日的上午，王府井 apm 的人还不是很多。手持 iTouch 在商场溜达，刚走到 Forever 21 的门口时，应用已经有提示消息了。</p>
+<p>对于一个购物爱好者而言，很难区分吸引我的是店铺商品还是推送消息，在店里溜达一圈后，点开了「水滴」应用里的新鲜事分享，图文配合的内容像是进入到另一个朋友圈，每条「状态」的定位都精确到店面。</p>
+<p> <img src="http://github.com/thekf/assets/ResourceImage/2017-06-02/e18de037123d1f04be1b05f0c8dbcb54.jpg" alt=""></p>
+<p><code>iBeacon</code>是苹果被<code>允许能在后台运行</code>的，不论你将应用退出到后台还是杀死，iBeacon都能激活应用不过只能激活10秒左右，但是这段时间足可以做很多事情了。</p>
+<p>当看到有人在新鲜事里说到 H&amp;M 的新款短袖时，我已经在 Forever 21 里呆不下去了。这时，通过搜索 H&amp;M，应用就自动显示 H&amp;M 与我的距离，沿着应用提示，我在一楼的另一处找到了 H&amp;M。</p>
+<p>意外的是，我在路上发现了外表清秀的 DropBeacon 设备，为了避免人为的损坏，它被安置得足够高。就是这个小小的设备，将它的位置与信息推送的行为关联起来，可以使手机上的应用精确到每个门店。DropBeacon 的产品总监张梦涵介绍，仅在 apm 这个商场内，就有 200 多个这样的蓝牙发射基站，当顾客走到离他较近的 DropBeacon 时，就会收到对应的店家推送的信息。</p>
+<p>不同的用途对于蓝牙发射基站的安装个数要求也会不同，四月兄弟的创始人郝航认为：”如果 iBeacon 基站当信标点做信息推送，用量就会比较少，如果做室内导航，那就按照面积，10m 左右一个，保证用户走到哪里都可以获得室内的位置。”</p>
+<ul>
+<li><p>基于 iBeacon 的其他尝试</p>
+<p>除了在商场，在博物馆、景区也出现了类似的服务。四月兄弟公司正在与南京博物馆、苏州拙政园合作。当我们来到景区，打开手机蓝牙,「南京博物馆」的 app 就会自动推送当前景点的相关介绍。俨然成为线上的导游。</p>
+<p><img src="http://github.com/assets/ResourceImage/2017-06-02/5a38882749a04af94f6622ff6998c5ac.jpg" alt=""></p>
+<p>iBeacon 技术一经问世，它所应用的领域就一直在被拓宽。国外的软件开发公司 Panic 就自己开发出了一款基于 iBeacon 的签到软件——PunchClock，国外的航空公司也将 iBeacon 技术整合到伦敦的希思罗机场，通知用户其感兴趣的促销活动和关注的区域等相关信息。</p>
+</li>
+</ul>
+<p>就连眼镜也与苹果的 iBeacon 技术整合在一起。当用户试图寻找太阳镜的时候，手机将能够提醒你，并且通知所找的对象距离有多远。</p>
+<ul>
+<li>iBeacon 不是目的本身</li>
+</ul>
+<p>「iBeacon 有点被用滥了，很多客户一上来就要买解决方案，没有试验 iBeacon 如何与自己的产品结合。更好的方法是先购买硬件，请工程研发人员调试，看哪个功能更加适合自己的产品。」四月兄弟的一名市场人员说。</p>
+<p>对于很多商户而言，iBeacon 技术本身只是手段，达到引流人群，促销产品才是真正的目的。而在这一点上，基于 iBeacon 技术的成本要比传统推销低得多。</p>
+<p>一些高端零售商、银行和航空公司则利用 iBeacon 指导自己的运营，国内线下大数据服务提供商 SENSORO 的创始人赵武阳介绍，他们正在做这样的分析。当获得消费者许可后，获取其精准的数据，从而能帮助银行等客户提供更加具有针对性的服务。</p>
+<ul>
+<li>未来的设想有多远</li>
+</ul>
+<p>之前极客公园也有一篇关于 iBeacon 的文章介绍了 iBeacon 技术的现实局限性，比如打开蓝牙对于大多数用户而言都不是一个习惯性的行为。目前，基于 iBeacon 技术的应用推送还都只是靠线下的博物馆或者商场的地推。</p>
+<p>DropBeacon 已经开始与商场合作，搭建展厅，提供消费者的休息区，让他们在购物之余，打开蓝牙与应用，分享购物新鲜事，查看优惠信息，淘淘商场内的其他产品，实现线下购物与线上分享的结合。</p>
+<p>用户行为习惯的改变也许会需要一个过程，但技术正在加速这个过程，在四月兄弟的创始人郝航看来，随着蓝牙提供的功能越来越丰富，关于蓝牙耗电的固有看法将慢慢转变，打开蓝牙将成为一种习惯。</p>
+<p>DropBeacon 的张梦涵设想，未来，基于 iBeacon 会有很多很好玩的东西，线上与线下的结合可以让购物充满乐趣。</p>
+
       
 
       
@@ -215,6 +253,17 @@
     <div class="article-info article-info-index">
       
       
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">iBeacon</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
       
 
       
@@ -265,7 +314,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http:thekf.github.io/tools/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http:thekf.github.io/2017/03/17/iOS日常(iBeacon)/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -277,6 +326,25 @@
 </article>
 
   
+<nav id="article-nav">
+  
+    <a href="/2017/05/19/iOS安全(NSUserDefault)/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          iOS安全(无需写代码给NSUserDefault加密)
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2017/03/15/iOS安全(Security)/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">iOS安全 (Security)</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
 
 <aside class="wrap-side-operation">
     <div class="mod-side-operation">
@@ -327,7 +395,7 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
+		isPost: true,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,
